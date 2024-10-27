@@ -1,6 +1,6 @@
 /*
   ArdHDMI.cpp - Library for basic functions of the shield ArdHDMI.
-  For information plese send Email to: progettoschede@gmail.com
+  For information please send Email to: progettoschede@gmail.com
    Ver. 1.0 04.08.2024
 */
 
@@ -24,7 +24,7 @@ void ArduTV::begin()
   digitalWrite(_CSpin, HIGH); 
   SPI.begin();         // initialize the SPI library
   //SPI.beginTransaction(SPISettings(750000, MSBFIRST, SPI_MODE0));
-  SPI.beginTransaction(SPISettings(1500000, MSBFIRST, SPI_MODE0));
+  SPI.beginTransaction(SPISettings(1000000, MSBFIRST, SPI_MODE0));
 }
 
 unsigned int ArduTV::SendSingle(unsigned int VALUE)
