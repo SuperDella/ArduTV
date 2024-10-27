@@ -7,9 +7,13 @@
 #define ArduTV_h
 
 #include "Arduino.h"
+
 #ifndef u16
-    typedef uint16_t u16;
-    typedef uint16_t u8;
+    //typedef uint16_t u16;
+    //typedef uint8_t u8;
+
+    typedef short unsigned int u16;
+    typedef uint8_t u8;
 #endif
 
 class ArduTV
